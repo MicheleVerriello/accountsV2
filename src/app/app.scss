@@ -1,0 +1,43 @@
+.header {
+
+    --background: rgb(22, 22, 24);
+
+    .toolbar{
+
+        --background: rgb(22, 22, 24);
+
+        .menu-title {
+
+            color: white;
+        }
+    }
+}
+
+
+.content {
+
+    --background: rgb(22, 22, 24);
+
+    .menu {
+
+        background-color: rgb(22, 22, 24);
+    
+        .menu-item {
+
+            --background:  rgb(22, 22, 24);
+            color: white;
+            margin-bottom: 3%;
+
+            .menu-icon{
+                color: white;
+            }
+        }
+    }
+}
+
+.menu {
+    --background: rgb(22, 22, 24);
+}
+.card_dev {
+    --background: rgb(46, 46, 48);
+}

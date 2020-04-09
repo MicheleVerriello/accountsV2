@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines="none" class="list">
+
+    <ion-item class="item" (click)="openModalChangePassword()">
+      <ion-label>Change Password</ion-label>
+      <ion-icon slot="end" name="key" color="light"></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button class="menu-fab-button">
+      <ion-icon name="menu"></ion-icon>
+    </ion-fab-button>
+  
+    <ion-fab-list side="start">
+      <ion-fab-button class="fab-list-button-tutorial" routerLink="/tutorial">
+        <ion-icon class="icon-size" name="help"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button class="fab-list-button-add" routerLink="/new-account">
+        <ion-icon class="icon-size" name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button class="fab-list-button-accounts" routerLink="/accounts">
+        <ion-icon class="icon-size" name="list"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  
+  </ion-fab>
+  
+</ion-content>

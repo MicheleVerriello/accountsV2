@@ -1,0 +1,88 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+
+//ion-header default styles for all app's pages
+ion-header {
+
+    --background: rgb(22, 22, 24);
+
+    ion-toolbar{
+
+        --background: rgb(22, 22, 24);
+
+        ion-title {
+
+            color: white;
+        }
+    }
+}
+
+//ion-content default styles for all app's pages
+ion-content {
+    
+    --background: rgb(22, 22, 24);
+}
+
+.tab-card {
+
+    background-color: grey;
+
+    .tab-icon {
+
+        font-size: 30px;
+    }
+}
+
+//Define the style of the menu' s icon
+.menu-fab-button {
+    --color: white;
+    --background: rgb(22, 22, 24);
+}
+
+.fab-list-button-settings {
+    --color: white;
+    --background: rgb(95, 94, 94);
+}
+
+.fab-list-button-tutorial {
+    --color: white;
+    --background: rgb(95, 94, 94);
+}
+
+.fab-list-button-add {
+    --color: white;
+    --background: rgb(95, 94, 94);
+}
+
+.fab-list-button-accounts {
+    --color: white;
+    --background: rgb(95, 94, 94);
+}
+
+.icon-size {
+    font-size: 26px;
+}
+
+.fa-icon-account {
+    font-size: 25px;
+}
+
+.fa-icon-account-accounts {
+    font-size: 22px;
+    margin-left: 0;
+}
+
+.fa-icon-account-details {
+    margin-right: 5%;
+    font-size: 28px;
+}

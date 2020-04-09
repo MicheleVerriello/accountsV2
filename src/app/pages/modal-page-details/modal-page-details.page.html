@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{accountName}}</ion-title>
+    <ion-icon slot="end" class="icon-account" name="close" style="color: rgb(22, 22, 24);" *ngIf="accountNameIsIconDefault(accountName)"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-facebook" color="primary" *ngIf="accountNameIsIcon(accountName, 'facebo')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-linkedin" color="primary" *ngIf="accountNameIsIcon(accountName, 'linked')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-apple" color="light" *ngIf="accountNameIsIcon(accountName, 'apple')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-github" color="light" *ngIf="accountNameIsIcon(accountName, 'github')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-instagram" color="tertiary" *ngIf="accountNameIsIcon(accountName, 'instag')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-dropbox" color="secondary" *ngIf="accountNameIsIcon(accountName, 'dropbo')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-google" color="light" *ngIf="accountNameIsIcon(accountName, 'google')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-youtube" color="danger" *ngIf="accountNameIsIcon(accountName, 'youtu')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-pinterest" color="danger" *ngIf="accountNameIsIcon(accountName, 'pinteres')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-twitter" color="secondary" *ngIf="accountNameIsIcon(accountName, 'twitt')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-snapchat" color="warning" *ngIf="accountNameIsIcon(accountName, 'snapch')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-reddit" color="danger" *ngIf="accountNameIsIcon(accountName, 'reddit')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-playstation" color="primary" *ngIf="accountNameIsIcon(accountName, 'playstat')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-skype" color="secondary" *ngIf="accountNameIsIcon(accountName, 'skyp')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-xbox" color="success" *ngIf="accountNameIsIcon(accountName, 'xbox')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-tumbrl" color="success" *ngIf="accountNameIsIcon(accountName, 'tumbrl')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-twitch" color="tertiary" *ngIf="accountNameIsIcon(accountName, 'twitch')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-bitbucket" color="primary" *ngIf="accountNameIsIcon(accountName, 'bitbuc')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-yahoo" color="tertiary" *ngIf="accountNameIsIcon(accountName, 'yaho')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-ionic" color="secondary" *ngIf="accountNameIsIcon(accountName, 'ionic')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-windows" color="secondary" *ngIf="accountNameIsIcon(accountName, 'microso')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="logo-android" color="success" *ngIf="accountNameIsIcon(accountName, 'androi')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="mail" color="danger" *ngIf="accountNameIsIcon(accountName, 'mail')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="mail" color="secondary" *ngIf="accountNameIsIcon(accountName, 'outlo')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="cloud" color="primary" *ngIf="accountNameIsIcon(accountName, 'cloud')"></ion-icon>
+    <ion-icon slot="end" class="icon-account" name="card" color="light" *ngIf="accountNameIsIcon(accountName, 'credit card')"></ion-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'yellow'}" [icon]="['fab', 'amazon']" *ngIf="accountNameIsIcon(accountName, 'amazo')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#0066FF'}" [icon]="['fab', 'atlassian']" *ngIf="accountNameIsIcon(accountName, 'atlassian')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '0099FF'}" [icon]="['fab', 'cc-paypal']" *ngIf="accountNameIsIcon(accountName, 'paypal')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'yellow'}" [icon]="['fab', 'ebay']" *ngIf="accountNameIsIcon(accountName, 'ebay')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'white'}" [icon]="['fab', 'waze']" *ngIf="accountNameIsIcon(accountName, 'waze')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'yellow'}" [icon]="['fab', 'aws']" *ngIf="accountNameIsIcon(accountName, 'aws')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'orange'}" [icon]="['fab', 'cc-mastercard']" *ngIf="accountNameIsIcon(accountName, 'mastercard')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'white'}" [icon]="['fab', 'cc-amex']" *ngIf="accountNameIsIcon(accountName, 'american express')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '0066FF'}" [icon]="['fab', 'cc-visa']" *ngIf="accountNameIsIcon(accountName, 'visa')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'green'}" [icon]="['fab', 'spotify']" *ngIf="accountNameIsIcon(accountName, 'spotif')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'red'}" [icon]="['fab', 'neos']" *ngIf="accountNameIsIcon(accountName, 'netflix')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '0099FF'}" [icon]="['fab', 'docker']" *ngIf="accountNameIsIcon(accountName, 'docker')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'red'}" [icon]="['fab', 'flipboard']" *ngIf="accountNameIsIcon(accountName, 'flipboard')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#00FF00'}" [icon]="['fab', 'evernote']" *ngIf="accountNameIsIcon(accountName, 'evernote')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#0066FF'}" [icon]="['fab', 'jira']" *ngIf="accountNameIsIcon(accountName, 'jira')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#00FF00'}" [icon]="['fab', 'line']" *ngIf="accountNameIsIcon(accountName, 'line')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'orange'}" [icon]="['fab', 'magento']" *ngIf="accountNameIsIcon(accountName, 'magento')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'white'}" [icon]="['fab', 'medium-m']" *ngIf="accountNameIsIcon(accountName, 'medium')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#FF3300'}" [icon]="['fab', 'patreon']" *ngIf="accountNameIsIcon(accountName, 'patreon')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'red'}" [icon]="['fab', 'quora']" *ngIf="accountNameIsIcon(accountName, 'quora')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'orange'}" [icon]="['fab', 'stack-overflow']" *ngIf="accountNameIsIcon(accountName, 'stackoverf')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#0099FF'}" [icon]="['fab', 'telegram-plane']" *ngIf="accountNameIsIcon(accountName, 'telegram')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#00FF99'}" [icon]="['fab', 'tripadvisor']" *ngIf="accountNameIsIcon(accountName, 'tripadvisor')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'white'}" [icon]="['fab', 'uber']" *ngIf="accountNameIsIcon(accountName, 'uber')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#00FF99'}" [icon]="['fab', 'vine']" *ngIf="accountNameIsIcon(accountName, 'vine')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#0066FF'}" [icon]="['fab', 'vk']" *ngIf="accountNameIsIcon(accountName, 'vk')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#0066FF'}" [icon]="['fab', 'wix']" *ngIf="accountNameIsIcon(accountName, 'wix')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#0066FF'}" [icon]="['fab', 'yammer']" *ngIf="accountNameIsIcon(accountName, 'yammer')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#00CCFF'}" [icon]="['fab', 'wordpress']" *ngIf="accountNameIsIcon(accountName, 'wordpress')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'blue'}" [icon]="['fab', 'flickr']" *ngIf="accountNameIsIcon(accountName, 'flickr')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'blue'}" [icon]="['fab', 'steam-symbol']" *ngIf="accountNameIsIcon(accountName, 'steam')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'purple'}" [icon]="['fab', 'slack']" *ngIf="accountNameIsIcon(accountName, 'slack')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': '#00FF99'}" [icon]="['fab', 'vimeo-v']" *ngIf="accountNameIsIcon(accountName, 'vimeo')"></fa-icon>
+    <fa-icon slot="end" class="fa-icon-account-details" [styles]="{'color': 'red'}" [icon]="['fab', 'adobe']" *ngIf="accountNameIsIcon(accountName, 'adobe')"></fa-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+ 
+    <div *ngIf="email">
+      <ion-label><b>Email</b></ion-label>
+      {{email}}
+    </div>
+
+    <div *ngIf="!email">
+      <ion-label color="medium"><b>Email</b></ion-label>
+      {{email}}
+    </div>
+
+    <div *ngIf="username">
+      <ion-label><b>Username</b></ion-label>
+      {{username}}
+    </div>
+
+    <div *ngIf="!username">
+      <ion-label color="medium"><b>Username</b></ion-label>
+      {{username}}
+    </div>
+
+    <div *ngIf="password">
+      <ion-label><b>Password</b></ion-label>
+      {{password}}     
+    </div>
+
+    <div *ngIf="!password">
+      <ion-label color="medium"><b>Password</b></ion-label>
+      {{password}}     
+    </div>
+
+    <div *ngIf="pin">
+      <ion-label><b>Pin</b></ion-label>
+      {{pin}}
+    </div>
+
+    <div *ngIf="!pin">
+      <ion-label color="medium"><b>Pin</b></ion-label>
+      {{pin}}
+    </div>
+
+    <div *ngIf="telefono">
+      <ion-label><b>Phone</b></ion-label>
+      {{telefono}}
+    </div>
+
+    <div *ngIf="!telefono">
+      <ion-label color="medium"><b>Number</b></ion-label>
+      {{telefono}}
+    </div>
+
+    <div *ngIf="description">
+      <ion-label><b>Description</b></ion-label>
+      {{description}}
+    </div>
+
+    <div *ngIf="!description">
+      <ion-label color="medium"><b>Description</b></ion-label>
+      {{description}}
+    </div>
+
+  </ion-card>
+
+  <!-- Ion fab that close the modal -->
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="danger" (click)="closeModal()">
+      <ion-icon name="close"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
